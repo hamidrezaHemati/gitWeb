@@ -1,0 +1,56 @@
+/* Style for the sidebar */
+.sidebar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 18%, 97%);
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+
+.sb-groups {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items from left */
+    margin-bottom: 10px; /* Add some space between groups */
+    width: 100%; /* Ensure items take full width of parent */
+    margin-left: 100px;
+}
+
+/* Style for the sb-item class */
+.sb-item {
+    margin-bottom: 5px; /* Add margin bottom */
+}
+
+/* Style for the text items */
+.sidebar-group-title {
+    color: #666; /* Greyish color */
+}
+
+/* Style for the links */
+.sb-page-link a {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Change link color on hover */
+.sb-page-link a:hover {
+    color: blue; /* Hover color */
+}
+
+/* Style for the content */
+.content {
+    margin-left: 300px; /* Same width as the sidebar */
+    padding: 20px;
+    padding-top: 40px;
+}
